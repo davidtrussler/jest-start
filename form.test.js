@@ -8,14 +8,12 @@ const { markup } = require('./markup')
 console.log(typeof markup);
 
 
+beforeEach(() => {
+  document.body.innerHTML = markup;
+  bindEvents();
+});
+
 describe('inserting content', () => {
- document.body.innerHTML = markup;
-
-
-  beforeEach(() => {
-    bindEvents();
-  });
-
 
   insertText();
 
@@ -25,4 +23,10 @@ describe('inserting content', () => {
     document.getElementById('button').click();
     expect(document.getElementById('result').textContent).toBe('shut up');
   }); 
+});
+
+describe.only('copying billing to delivery', () => {
+
+
+
 });
