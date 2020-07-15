@@ -14,10 +14,6 @@ const clickBtn = function(e) {
 	copyContent();
 }
 
-// const insertText = function() {
-// 	  let typedtext = document.getElementsByTagName('input').item(0).value;
-// 	  document.getElementById('result').textContent = typedtext;
-// }
 
 const copyContent = function() {
 		

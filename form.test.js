@@ -13,20 +13,25 @@ beforeEach(() => {
   bindEvents();
 });
 
-describe('inserting content', () => {
+// describe('inserting content', () => {
 
-  insertText();
+//   insertText();
 
-  test('It copies content of input to another element', () => {
-    document.getElementsByTagName('input').item(0).value = 'shut up';
+//   test('It copies content of input to another element', () => {
+//     document.getElementsByTagName('input').item(0).value = 'shut up';
 
-    document.getElementById('button').click();
-    expect(document.getElementById('result').textContent).toBe('shut up');
-  }); 
-});
+//     document.getElementById('button').click();
+//     expect(document.getElementById('result').textContent).toBe('shut up');
+//   }); 
+// });
 
 describe.only('copying billing to delivery', () => {
+  document.getElementsByTagName('.billing input[type=text]');
 
+  .value = 'United Kingdom';
 
+  copyContent();
+
+  expect()
 
 });
